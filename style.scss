@@ -20,6 +20,18 @@ body{
     background-position: center;
     background-size: cover;
     padding-top: 217px;
+
+    &__text{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        align-items: center;
+        color: #FFFFFF;
+        width: 481px;
+        margin-bottom: 44px;
+    }
+    
 }
 
 .title{
@@ -31,17 +43,6 @@ body{
     color: #FFFFFF;
     width: 788px;
     margin-bottom: 32px;
-}
-
-.top__text{
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 32px;
-    align-items: center;
-    color: #FFFFFF;
-    width: 481px;
-    margin-bottom: 44px;
 }
 
 .button{
