@@ -58,12 +58,45 @@ switch (monthNumber) {
 }
 
 //Задание 6
-
+//Макет, адаптив и эффекты наведения созданы.
 
 //Задание 7
+let x = prompt('Пожалуйста, введите любое число');
+let newX;
+if (x = Number(x)){
+    newX = x;
+}
+else{
+    console.log('Вы ввели не число');
+}
 
+if (newX % 2 === 0){
+    console.log('Число четное');
+}
+else if(newX % 2 === 1) {
+    console.log('Число нечетное');
+}
 
 //Задание 8
-
+let clientOS = 1;
+if (clientOS === 0){
+    console.log('Установите версию приложения для iOS по ссылке');
+}
+else if(clientOS === 1){
+    console.log('Установите версию приложения для Android по ссылке');
+}
 
 //Задание 9
+let clientDeviceYear = 2015;
+if (clientDeviceYear >= 2015 && clientOS === 0){
+    console.log('Установите версию приложения для iOS по ссылке');
+}
+else if (clientDeviceYear < 2015 && clientOS === 0){
+    console.log('Установите облегченную версию приложения для iOS по ссылке');
+}
+else if (clientDeviceYear >= 2015 && clientOS === 1){
+    console.log('Установите версию приложения для Android по ссылке');
+}
+else if (clientDeviceYear < 2015 && clientOS === 1){
+    console.log('Установите облегченную версию приложения для Android по ссылке');
+}
