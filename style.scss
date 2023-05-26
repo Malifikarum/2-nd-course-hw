@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background: #000915;
 }
 
 .center{
@@ -55,11 +56,16 @@ body{
     border-radius: 30px;
     height: 48px;
     width: 234px;
+    transition: all .3s;
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 8px #9C0332;
+    }
 }
 
 .game-box{
     min-height: 556px;
-    background: #000915;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -77,6 +83,12 @@ body{
     color: #FFFFFF;
     padding-left: 32px;
     padding-bottom: 32px;
+    transition: all .4s;
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 14px #2f67a7;
+    }
 
     &-1{
         background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),  url(img/game1.jpg);
@@ -88,6 +100,52 @@ body{
 
     &-3{
         background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),  url(img/game3.jpg);
+    }
+
+    &__start{
+        padding-top: 234px;
+        padding-bottom: 234px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        max-width: 584px;
+    }
+
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        align-items: center;
+        color: #FFFFFF;
+
+        &::after{
+            content: "!";
+        }
+    }
+
+    &__text{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    &__img{
+        width: 435px;
+
+        &_gamepad{
+            width: 100%;
+        }
     }
 }
 
