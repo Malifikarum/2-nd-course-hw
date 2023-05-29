@@ -109,6 +109,13 @@ body{
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+
+        &_two{
+            display: flex;
+            flex-direction: row-reverse;
+            padding-bottom: 239px;
+            padding-top: 239px;
+        }
     }
 
     &__info{
