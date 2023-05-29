@@ -1,28 +1,28 @@
 // 1 задание
 let a = 10;
-alert(a);
+console.log(a);
 a = 20;
-alert(a);
+console.log(a);
 // 2 задание
 const iphone1 = 2007;
-alert(iphone1);
+console.log(iphone1);
 // 3 задание
 const creatorName = 'Брендон Айк (Brendon Eich)';
-alert(creatorName);
+console.log(creatorName);
 // 4 задание
 let number1 = 10;
 let number2 = 2;
-alert(number1 + number2);
-alert(number1 - number2);
-alert(number1 * number2);
-alert(number1 / number2);
+console.log(number1 + number2);
+console.log(number1 - number2);
+console.log(number1 * number2);
+console.log(number1 / number2);
 // 5 задание
 let result = number2**5;
-alert(result);
+console.log(result);
 // 6 задание
 a = 9;
 let b = 2;
-alert(a % b);
+console.log(a % b);
 // 7 задание
 let num = 1;
 num += 5;
@@ -31,10 +31,10 @@ num *= 7;
 num /= 3;
 num += 1;
 num -= 1;
-alert(num);
+console.log(num);
 // 8 задание
 let age = prompt('Сколько тебе лет?');
-alert(age);
+console.log(age);
 // 9 задание
 let user = {
     name: 'Саша',
@@ -49,7 +49,7 @@ user.age = 28;
 delete user['city of residence'];
 // 9.4 задание
 let info = prompt('Какую информацию хотите узнать о пользователе?');
-alert(user[info]);
+console.log(user[info]);
 // 10 задание
 let userName = prompt('Введите ваше имя');
-alert(`Привет, ${userName}!`);
+console.log(`Привет, ${userName}!`);

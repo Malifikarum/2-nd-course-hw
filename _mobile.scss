@@ -34,5 +34,34 @@
         &-box{
             max-height: 1221px;
         }
+
+        &__start{
+            padding-top: 51px;
+            padding-bottom: 85px;
+        }
+
+        &__info{
+            align-items: center;
+        }
+
+        &__title{
+            font-size: 32px;
+            line-height: 39px;
+
+            &::after{
+                content: "";
+            }
+        }
+
+        &__text{
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__img{
+            margin-top: 64px;
+            width: 244;
+        }
     }
 }

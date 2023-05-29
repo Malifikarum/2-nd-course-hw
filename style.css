@@ -6,6 +6,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: #000915;
 }
 
 .center {
@@ -53,11 +54,15 @@ body {
   border-radius: 30px;
   height: 48px;
   width: 234px;
+  transition: all 0.3s;
+}
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #9C0332;
 }
 
 .game-box {
   min-height: 556px;
-  background: #000915;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -75,6 +80,11 @@ body {
   color: #FFFFFF;
   padding-left: 32px;
   padding-bottom: 32px;
+  transition: all 0.4s;
+}
+.game:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 14px #2f67a7;
 }
 .game-1 {
   background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/game1.jpg);
@@ -84,6 +94,45 @@ body {
 }
 .game-3 {
   background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/game3.jpg);
+}
+.game__start {
+  padding-top: 234px;
+  padding-bottom: 234px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.game__info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 584px;
+}
+.game__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  align-items: center;
+  color: #FFFFFF;
+}
+.game__title::after {
+  content: "!";
+}
+.game__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  align-items: center;
+  color: #FFFFFF;
+}
+.game__img {
+  width: 435px;
+}
+.game__img_gamepad {
+  width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -117,5 +166,28 @@ body {
   }
   .game-box {
     max-height: 1221px;
+  }
+  .game__start {
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
+  .game__info {
+    align-items: center;
+  }
+  .game__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .game__title::after {
+    content: "";
+  }
+  .game__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .game__img {
+    margin-top: 64px;
+    width: 244;
   }
 }/*# sourceMappingURL=style.css.map */
