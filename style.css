@@ -103,6 +103,12 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.game__start_two {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 239px;
+  padding-top: 239px;
+}
 .game__info {
   display: flex;
   flex-direction: column;
@@ -170,6 +176,9 @@ body {
   .game__start {
     padding-top: 51px;
     padding-bottom: 85px;
+  }
+  .game__start_two {
+    padding-bottom: 90px;
   }
   .game__info {
     align-items: center;
