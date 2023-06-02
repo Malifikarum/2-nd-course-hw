@@ -59,6 +59,7 @@ body {
 .button:hover {
   transform: scale(1.05);
   box-shadow: 0 0 8px #9C0332;
+  background: #EB443F;
 }
 
 .game-box {
@@ -109,11 +110,26 @@ body {
   padding-bottom: 239px;
   padding-top: 239px;
 }
+.game__start_three {
+  background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 10%), linear-gradient(180deg, rgba(0, 0, 0, 0) 90%, #000915 100%), url(img/bg-bot.jpg), #000915;
+  padding-top: 276px;
+  padding-bottom: 288px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
 .game__info {
   display: flex;
   flex-direction: column;
   gap: 32px;
   max-width: 584px;
+}
+.game__info_bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .game__title {
   font-style: normal;
@@ -134,11 +150,27 @@ body {
   align-items: center;
   color: #FFFFFF;
 }
+.game__text_bot {
+  width: 1200px;
+  text-align: center;
+}
 .game__img {
   width: 435px;
 }
 .game__img_gamepad {
   width: 100%;
+}
+
+.footer__text {
+  height: 80px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
 }
 
 @media (max-width: 767px) {
@@ -194,6 +226,9 @@ body {
     text-align: center;
     font-size: 14px;
     line-height: 22px;
+  }
+  .game__text_bot {
+    width: 343px;
   }
   .game__img {
     margin-top: 64px;
