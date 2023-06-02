@@ -61,7 +61,7 @@ function multNumbers(a, b) {
     a = prompt('Введите первое число');
     b = prompt('Введите второе число');
 
-    if (isNaN(a) === true || isNaN(b) === true) {
+    if (isNaN(a) || isNaN(b)) {
         console.log('Одно или оба значения не являются числом');
     }
     else {
@@ -76,7 +76,7 @@ console.log(multNumbers());
 function cube(a) {
     // a = prompt('Введите число'); Закомментировано ради самостоятельной проверки через цикл.
 
-    if (isNaN(a) === true) {
+    if (isNaN(a)) {
         console.log('Переданный параметр не является числом');
     }
     else {
