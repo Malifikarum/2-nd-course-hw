@@ -19,11 +19,21 @@ const arrNumb2 = [1, 3, 5, 10, 20];
 console.log(arrNumb2.join(' '));
 
 //Задание 4
-const arr = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1]
-]
+// const arr = [
+//     [1, 1, 1],
+//     [1, 1, 1],
+//     [1, 1, 1]
+// ]
+
+let arr = [];
+
+for (let i = 0; i < 3; i++) {
+	arr[i] = []; 
+	
+	for (let j = 0; j < 3; j++) {
+		arr[i].push(1);
+	}
+}
 
 for (let arrIn of arr) {
     for (let element of arrIn) {
@@ -67,7 +77,8 @@ const arrTotal = [
     [1, 2, 3],
     [4, 5, 6]
 ];
-console.log(arrTotal[0].concat(arrTotal[1]));
+// console.log(arrTotal[0].concat(arrTotal[1]));
+console.log(arrTotal.flat());
 
 //Задание 10
 const arrNumb5 = [1, 6, 4, 8];
