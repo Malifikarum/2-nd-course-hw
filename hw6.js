@@ -104,7 +104,7 @@ function getLengthWords(array) {
     for (let i = 0; i < array.length; i++) {
         array[i] = array[i].length;
     }
-    console.log(array);
+    return array;
 }
 console.log(getLengthWords(arrWords));
 
@@ -121,6 +121,6 @@ function filterPositive(array) {
             el++;
         }        
     }
-    console.log(arrResult);
+    return arrResult;
 }
 console.log(filterPositive(arrMixNumber2));
